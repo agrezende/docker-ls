@@ -309,6 +309,11 @@ achieved with
 
     $ source <(docker-ls autocomplete bash)
 
+or to avoid "carriage return" erros on some scenarios,
+
+    $ source <(docker-ls autocomplete bash | sed 's/\r//')
+
+
 # License
 
 Docker-ls is distributed under the terms of the MIT license.
